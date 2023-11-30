@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六 (2) 班网站—by 夏一凡</title>
+    <style>
+        /*未登录状态*/
+        * {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color:rgb(255, 255, 255);
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #252525;
+        }
+        .shell{
+            position:fixed;
+            width: 280px;
+            height: 100%;
+            background-color: #161111;
+            float: left;
+            left: 0;
+        }
+        .buttons{
+            margin: 60px 0;
+            color: #ffffff;
+        }
+
+        #li-title {
+            letter-spacing: 2px;
+            font: 800 20px '';
+            padding: 0 0 28px 23%;
+            transition: .3s;
+        }
+
+        .li{
+            letter-spacing: 2px;
+            font: 600 17px '';
+            padding: 16px 52px 16px 30px;
+            transition: .3s;
+        }
+        
+        .buttons>li:hover{
+            background-color: #1f1e1e;
+        }
+        
+        .li ul{
+            width: 0;
+            height: 100%;
+            padding: 60px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            background-color: #000000;
+            transition: .3s;
+        }
+
+        .li ul li{
+            padding: 16px 24px;
+            transition: .3s;
+        }
+
+        .li:hover ul{
+            width: 228px;
+        }
+        .li ul li:hover{
+            background-color: #1f1e1e;
+        }
+
+        [name="li-student"] {
+            color: royalblue;
+        }
+
+        [name="li-teacher"] {
+            color: red;
+        }
+
+        [name="li-adminOP"] {
+            color: gold;
+        }
+
+        #homepage-card {
+            height: 300px;
+            width:200px;
+            border-radius: 10px;
+            padding: 10px;
+            color:white;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: #000000;
+            transition: background-color,transform 2s,2s ease-in-out;   
+        }
+
+        #homepage-card:hover {
+            background-color: rgb(255, 255, 255);
+            color:#000000;
+            box-shadow: 0px 0px 20px black;
+        }
+
+        #homepage-card-content,#homepage-card-h3 {
+            cursor: default;
+        }
+
+        p {
+            font: 600 17px '';
+            color: #000000;
+            transition: 2s;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="shell">
+        <ul class="buttons">
+            <li id="li-title">
+                六（2）班网站
+            </li>
+
+            <li class="li">
+                管理
+                <ul>
+                    <li><a href="../index.html">退出账号  </a></li>
+                    <li><a href="about.html">关于我</a></li>
+                </ul>
+            </li>
+
+            <li class="li">
+                其他分站
+                <ul>
+                    <li><a href="navigation.html">导航站</a></li>
+                    <li><a href="scenery.html">风景站</a></li>
+                    <li><a href="newspaper.html">报纸站</a></li>
+                    <li><a href="messagebar.html">留言站</a></li>
+                </ul>
+            </li>
+
+            <li class="li">
+                六（2）成员表
+                <ul>
+                    <li><a name="li-student" href="../html-manager/group/student-group.html">学生组</a></li>
+                    <li><a name="li-teacher" href="../html-manager/group/teacher-group.html">老师组</a></li>
+                    <li><a name="li-adminOP" href="../html-manager/group/admin-group.html">管理组</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="homepage-card">
+        <h3 id="homepage-card-h3">Welcome!</h3>
+        <p id="homepage-card-content">你好!这里是六（2）班网站，准备出发了吗?看起来你已经登录了，点击旁边按钮开始你的旅程！</p>
+    </div>
+</body>
+</html>
