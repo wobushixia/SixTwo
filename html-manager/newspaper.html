@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报纸站</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0px;
+            padding: 0;
+        }
+
+        .hidden {
+            background-color: black;
+            border-color: black;
+            border-radius: 5px;
+            transition: 0.4s;
+        }
+
+        .hidden:hover {
+            background-color: white;
+        }
+
+        header {
+            background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        [name="header-list"] {
+            color: white;
+            font: 600 20px '';
+            margin: 0px 30px 0px 0px
+        }
+
+        .header-content-list-title {
+            color: rgb(165, 83, 241);
+            font: 600 20px '';
+            margin: 0px 30px 0px 0px
+        }
+
+        a {
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #dbdddd;
+            /* 鼠标悬停时文字颜色渐变为白色 */
+        }
+
+        #homepage {
+            margin: 80px 0px 10px 20px;
+            color: rgb(0, 0, 0);
+            font: 600 20px '';
+
+        }
+
+        #select-list {
+            margin: 300px 0px 0px 0px;
+            color: rgb(0, 0, 0);
+            font: 600 20px '';
+            left: 0%;
+        }
+
+        .card {
+            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            width: 300px;
+            height: 500px;
+            left: 0px;
+            padding: 0px 10px 10px 10px;
+            transition: 1s;
+            border: 1px solid #b3b3b3;
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 90px #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span name="header-title" class="header-content-list-title">报纸站</span>
+        <a href="logged.html" name="header-list" class="header-content-list-homepage">返回主页</a>
+        <a href="#select-list" name="header-list" class="header-content-list-newspaper">报纸</a>
+    </header>
+    <div id="homepage">
+        Hi,一起看看我们的报纸吧,布局有点丑
+    </div>
+    <div id="select-list">
+        <a href="newspaper-list/first.html">
+            <div class="card">
+                <h2>第一板报纸</h2>
+            </div>
+        </a>
+    </div>
+</body>
+<script>
+</script>
+
+</html>
