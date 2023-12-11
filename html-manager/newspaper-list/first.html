@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,62 @@
         }
 
         h1 {
-            text-align: center;
+            text-align: left;
             color: azure;
         }
+
         a {
-            display: flexbox;
+            display: inline-block;
+            padding: 5px 10px;
             text-align: center;
             color: rgb(0, 0, 0);
             background-color: aliceblue;
-            margin: 0 0 0 50%;
             text-decoration: none;
             border-radius: 5px;
             border: 2px solid rgb(255, 255, 255);
         }
 
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            border-radius: 15px;
+        }
+
+        .wangpan {
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
     <h1>来看看我的报纸吧!</h1>
-    <a href="first.doc" download="报纸">下载</a>
+    <span>
+        <a class="wangpan" onclick="openModal()">网盘下载（不推荐）</a>
+        <a href="first.docx" download="报纸">浏览器下载（推荐）</a>
+    </span>
+    <div class="modal" id="myModal">
+        <h2>注意</h2>
+        <p>密码是:6TWO，注意大写，如果浏览器下载可以正常使用请不要用我，此消息只显示一次。</p>
+        <a class="wangpan" target="_blank" href="https://wwgg.lanzouj.com/iOFAB1hiaidi">下载</a>
+        <a class="wangpan" onclick="closeModal()">关闭</a>
+    </div>
 </body>
+<script>
+    function openModal() {
+        document.getElementById('myModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+    }
+</script>
+
 </html>
