@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小说站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-bottom: 3px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            border-bottom: 3px solid #fff;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 100px 50px;
+            margin-top: 80px;
+        }
+
+        p {
+            color: #000;
+        }
+
+        footer {
+            background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #remember:hover {
+            cursor: pointer;
+            color: #007bff;
+        }
+
+        nav ul li a.login_button {
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: absolute;
+            top: 10px;
+            right: 50px;
+            border: none;
+            cursor: pointer;
+            background-color: #6246ff;
+        }
+
+        nav ul li a.login_button:hover {
+            background-color: #5132da;
+            color: #fff;
+        }
+
+        #remember:hover::after {
+            content: " By XiaYifan";
+        }
+
+        h1,h3,h2{
+            z-index: 99999;
+            color: #000;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            background-color: #7500c4;
+            padding: 10px;
+            border-radius: 10px;
+            color: azure;
+            font-size: large;
+            transition: all 0.9s ease;
+        }
+
+        button:hover {
+            background-color: #a115ff;
+        }
+
+        #content-div {
+            padding: 50px;
+            padding-top: 0px;
+        }
+
+        #dashed-line-box{
+            border: 1px dashed black;
+            padding: 8px;
+        }
+
+        #hidden{
+            background-color: #000;
+            border-radius: 3px;
+        }
+
+        #hidden:hover{
+            background-color: white;
+            border: 1px dashed black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../choice.html">文章目录</a></li>
+                <li><a class="login_button" id="refresh">小说站</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>&nbsp;</h1>
+    <h1>小说站</h1>
+    <h3>素材由梅思远创建&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;拼写检查、编写、排版、制作：夏一凡</h3>
+    <div id="content-div">
+        <div id="dashed-line-box">
+            <p id="content">话说周锦钰，是一个十分聪明的人，在刚出生时，她便掌握了数学乘法，护士抱着她，别的孩子都是在哇哇大哭，她却在喊3.1415926</p>
+            <p id="content">护士都觉得这个孩子废了，然而她以后是震惊中外的学霸周</p>
+            <p id="content">一岁时，别的孩子都坐在摇摇车上睡觉，然而，她坐在摇摇车上，看着那满堆的数学公式，证明了数学家们都难以证明的哥德巴赫定理</p>
+            <p id="content">二岁时，她便可以随意的使用公式。她在黑板上画画写写已经达到了研究生学位的标准，她非常聪明，哪怕是研究生也无法撼动她的知识分毫，也只能喊她一句学姐。</p>
+            <p id="content">三岁时，她便同科学家们一起推倒世界难题。</p>
+            <p id="content">四岁时，她便已经能够解出宇宙生命之谜，她用满串的数学公式算出了浩瀚星河的样子。</p>
+            <p id="content">五岁时，她已经知道了世界之奥秘，连科学家都要称她为老师.围家派82亿军队保护她<a id="hidden">你在搞笑吗？？？<b>82亿军队？？？</b>——来自夏一凡检查时发现后的吐槽</a>，可是上天却妒忌她，让她失去了那记忆，让我们的学霸周在六岁开始，和普通人一样进入了小学一年级，甚至上天还把人们对她的记忆消散了，没有人记得当初的学霸周是什么样了，她浑浑疆噩的度过了第一年，一年级，可是她发现了一个外来者玲爷，她的名字叫做玲爷，周锦钰摸摸脑袋，这名字好像很熟悉的样子，可是我又想不起来.</p>
+            <p id="content">玲爷装作很喜爱她的样子，和她当起了朋友，表面上是因为她是数学最好的一个人，没有之一，可是实际比我们想的更深，她是穿越者，她知道周锦钰的脑袋将来是有大用处的，她能够成为世界之巅，她能被万人赞颂，可是，这样就会让她的利益受损，她，城市数学系最高的教授，现在竟然要被一个小孩子打败，她不甘心，她放不下，她此时脑袋里只有一个念头:干掉周锦钰</p>
+            <p id="content">可是现在时机未到，她脑袋未长成型，她有更大的念头，就是将周锦钰的脑子植入到自己的头脑里，让自已也拥有周锦钰那般的智慧，让她重新获得荣华富贵。可是如果现在不出时机，那么她只有五年的时间陪她，而且根据剧情来说，她还有半年是无法刺杀她的，因为她怀孕了，所以说这四年半的时间让脑子发育至少要三年，于是她只能在六年级的时候动手，或者，在她五年级的时候也行，但是那聪明才智，没有贯彻，而且五年级时她和周锦钰的关系逐渐恶化，她无法准确的刺杀她，就是刺杀她身体里的脑子也会向外排斥，导致她头疼欲裂。所以说她只有一个时候可以刺杀，那就是六年级上册</p>
+            <p id="content">因为她是穿越者，她知道数学课代表会改成杨晨歆，而杨晨歆正是她从小扶持的一位刺杀好手，她和吴欣雅一同妄图刺杀周锦钰，她们已经被迷惑住了，无法理消自己的神智，她们被邪恶的玲爷困住了</p>
+        </div>
+    </div>
+    <h2>第一章-结束</h2>
+    <h3>Tips:此文章由梅思远创建，错别字十分的多，所以如果你遇到了错别字或语句不通顺请报告给我们，谢谢！</h3>
+    <h3>E-mail:XiaRtdfuy@outlook.com</h3>
+    <h3>QQ:2143667276</h3>
+</body>
+
+</html>

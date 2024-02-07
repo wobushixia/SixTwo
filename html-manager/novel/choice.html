@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小说站</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      border-bottom: 3px solid transparent;
+      transition: border-bottom 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      border-bottom: 3px solid #fff;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 100px 50px;
+      margin-top: 80px;
+    }
+
+    p {
+      color: #000;
+    }
+
+    footer {
+      background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); 
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+#remember:hover {
+  cursor: pointer;
+  color: #007bff;
+}
+
+nav ul li a.login_button {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: absolute;
+  top: 10px; 
+  right: 50px; 
+  border: none; 
+  cursor: pointer; 
+  background-color: #6246ff;
+}
+
+nav ul li a.login_button:hover {
+  background-color: #5132da;
+  color: #fff;
+}
+
+#remember:hover::after {
+  content: " By XiaYifan";
+}
+
+h1{
+    z-index: 99999;
+    color: #000;
+    text-align: center;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: #7500c4;
+    padding: 10px;
+    border-radius: 10px;
+    color: azure;
+    font-size: large;
+    transition: all 0.9s ease;
+}
+
+button:hover{
+    background-color: #a115ff;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+          <li><a href="choice.html">文章目录</a></li>
+          <li><a class="login_button" id="refresh">小说站</a></li>
+        </ul>
+      </nav>
+  </header>
+  <div>
+  <h1>&nbsp;</h1>
+  <h1>小说站</h1>
+  </div>
+  <div>
+    <ul>
+        <li><a>周锦钰</a></li>
+        <ul>
+            <li>第一章:<a href="novel-list/周锦钰出世.html">周锦钰出世</a></li>
+        </ul>
+    </ul>
+  </div>
+</body>
+</html>
+
